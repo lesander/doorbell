@@ -27,6 +27,7 @@ def main():
 	if (timestamp - last < config.timeout):
 		print('[!] Doorbell is (still) ringing, however since the last ring was ' +
 			  'within %s seconds we ignore this.' % (config.timeout))
+		sleep(config.timeout - (timestamp - last))
 		return main()
 
 	# Notify the user of the ring!

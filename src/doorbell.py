@@ -18,9 +18,13 @@ def main():
 
 	global last
 
-	# Wait for the bell to ring.
+	# Wait for the bell to ring for a duration of at least 5 ms.
 	GPIO.wait_for_edge(config.pin, GPIO.FALLING)
-
+	sleep(0.005)
+	if (GPIO.input(config.pin) != 1):
+		print('[!] Doorbell did not ring for at least 5 ms, preventing false positive.')
+		return main()
+	
 	# Compare the current timestamp with the previous
 	# timestamp to prevent notification spam.
 	timestamp = time()
@@ -50,6 +54,7 @@ def notify(method, timestamp):
 		r = requests.post(endpoint, json = {
 			'token': config.token,
 			'user': config.user,
+			'device': config.device,
 			'message': config.message,
 			'timestamp': timestamp
 		})

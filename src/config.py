@@ -17,3 +17,4 @@ message = 'Someone\'s at the door!'
 # Set a Pushover API token.
 token = 'xxx'
 user = 'xxx'
+device = 'myDevice'

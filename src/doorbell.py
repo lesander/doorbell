@@ -54,6 +54,7 @@ def notify(method, timestamp):
 		r = requests.post(endpoint, json = {
 			'token': config.token,
 			'user': config.user,
+			'device': config.device,
 			'message': config.message,
 			'timestamp': timestamp
 		})

@@ -4,7 +4,7 @@
 ```shell
 git clone https://github.com/lesander/doorbell.git
 cd doorbell/
-pip install
+pip install -r requirements.txt
 cd ../
-python -m doorbell
+python3 doorbell
 ```

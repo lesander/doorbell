@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 import RPi.GPIO as GPIO
 from time import sleep, time
 import requests, sys

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Listen to BCM 17 (physical pin 11).
 pin = 17

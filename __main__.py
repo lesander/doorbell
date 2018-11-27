@@ -1,2 +1,2 @@
-#!/usr/bin/python
-import src/doorbell
+#!/usr/bin/python3
+import src.doorbell

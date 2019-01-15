@@ -1,7 +1,5 @@
 # 🔔 Smart doorbell running on a Raspberry Pi Zero W.
 
----
-
 My apartment building has an old-school analog doorbell system. Using some small components, a Raspberry Pi Zero W and a bit of Python I was able to digitalize my doorbell. I recieve pushover notifications when someone rings the doorbell. Ideal for when my music is on 100% or if I'm not at home and can alert a roommate so he or she can open the door for a delivery.
 
 <img src="img/doorbell-assembled.jpeg" width="50%">
